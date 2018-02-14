@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Lesson 1 - Javascript function</title>
+    <link rel="stylesheet" type="text/css" href="css/style-2.css">
+</head>
+  <body>
+    <div id="content">
+      <div>
+        <h1 id="banner">Lesson 1 - Simple Javascript function</h1>
+      </div>
+      <div class="row">
+        <div class="image"><img src="images/app.png" alt="applogo">
+        </div>
+        <div class="description">
+            <form action="demo_form.asp">
+            <p>First number: </p><input type="text" name="num1" id="number1"><br>
+            <p>Second number: </p><input type="text" name="num2" id="number2"><br><br>
+            </form>
+
+            <button class="button" onclick="myAdd()">Add</button>
+			<button class="button" onclick="mySubtract()">Subtract</button>
+			<button class="button" onclick="myMultiply()">Multiply</button>
+			<button class="button" onclick="myDivide()">Divide</button>
+        <p id="demo"></p>
+
+
+        </div>
+      </div>
+    </div>
+
+  
+</body>
+<script>
+function myAdd {
+// Read in two values from input boxes
+var num1 = parseInt(document.getElementById("number1").value);
+var num2 =parseInt (document.getElementById("number2").value);
+var add, subtract;
+// Add them together
+add = num1+num2;
+//display on the page
+document.getElementById ("demo").innerHTML='Addition:'+add;
+}
+</script>
+
+<script>
+function mySubtract() {
+// Read in two values from input boxes
+var num1 = parseInt(document.getElementById("number1").value);
+var num2 =parseInt (document.getElementById("number2").value);
+var subtract, add;
+// Subtract them from eachother
+subtract = num1-num2;
+//display on the page
+document.getElementById ("demo").innerHTML='Subtract:'+subtract;
+}
+</script>
+
+
+<script>
+function myMultiply() {
+// Read in two values from input boxes
+var num1 = parseInt(document.getElementById("number1").value);
+var num2 =parseInt (document.getElementById("number2").value);
+var multiply, add;
+// Multiply them together
+multiply = num1*num2;
+//display on the page
+document.getElementById ("demo").innerHTML='Multiply:'+multiply;
+}
+</script>
+
+<script>
+function myDivide() {
+// Read in two values from input boxes
+var num1 = parseInt(document.getElementById("number1").value);
+var num2 =parseInt (document.getElementById("number2").value);
+var divide, add;
+// Divide them together
+divide = num1/num2;
+
+//display on the page
+document.getElementById ("demo").innerHTML='Divide:'+divide;
+}
+</script>
+</html>
